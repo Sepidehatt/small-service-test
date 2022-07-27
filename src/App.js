@@ -68,7 +68,7 @@ function App() {
             //get full information of each models to display extra details 
             const fullInfo = infos?.find(elm => elm?.Model.toLowerCase().split(/[ -.:;?!~,`"&|()<>{}[\]\r\n/\\]+/).join('') === model[0])
             return (
-              <h5>{i + 1} - {model[0].toUpperCase()} designed by {fullInfo.Make}</h5>
+              <h5>{i + 1} - {fullInfo.Model} designed by {fullInfo.Make}</h5>
             )
           })}
         </div>
